@@ -113,30 +113,32 @@ export default function RegistrationForm() {
 
     setIsSubmitting(true);
 
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    try {
+      const response = await fetch('/api/applicants', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fullName: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          age: formData.age,
+          experience: formData.experience,
+          source: formData.source,
+        }),
+      });
 
-    const existingData = localStorage.getItem('genapex_applicants');
-    const applicants = existingData ? JSON.parse(existingData) : [];
-    
-    const newApplicant = {
-      id: String(Date.now()),
-      fullName: formData.fullName,
-      email: formData.email,
-      phone: formData.phone,
-      age: formData.age,
-      experience: formData.experience,
-      source: formData.source,
-      status: 'pending',
-      appliedDate: new Date().toISOString().split('T')[0],
-      interviewDate: '31/03/2026',
-      notes: '',
-    };
+      if (!response.ok) {
+        throw new Error('Failed to submit');
+      }
 
-    applicants.push(newApplicant);
-    localStorage.setItem('genapex_applicants', JSON.stringify(applicants));
-
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+    } catch (error) {
+      setIsSubmitting(false);
+      alert('Có lỗi xảy ra. Vui lòng thử lại.');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
