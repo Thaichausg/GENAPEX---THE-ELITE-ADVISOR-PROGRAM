@@ -1,0 +1,121 @@
+{
+  "programInfo": {
+    "name": "GENAPEX - THE ELITE ADVISOR PROGRAM",
+    "tagline": "Tư Vấn Viên Ưu Tú",
+    "organization": "Generali Việt Nam",
+    "duration": "18 tháng",
+    "objective": "Dự án chiến lược nhằm tuyển chọn, đào tạo và phát triển thế hệ Tư vấn tài chính chuyên nghiệp, xây dựng sự nghiệp bền vững."
+  },
+  "recruitment": {
+    "requirements": [
+      {
+        "label": "Độ tuổi",
+        "value": "25 - 60 tuổi"
+      },
+      {
+        "label": "Kinh nghiệm",
+        "value": "Ít nhất 1 năm kinh nghiệm bán hàng. Ưu tiên lĩnh vực Bảo hiểm, Tài chính, Ngân hàng."
+      },
+      {
+        "label": "Cam kết",
+        "value": "Làm việc toàn thời gian (Full-time)."
+      },
+      {
+        "label": "Tố chất",
+        "value": "Có tiềm năng đồng hành và cam kết phát triển lâu dài."
+      }
+    ],
+    "process": [
+      "Nộp Hồ Sơ",
+      "Phỏng Vấn Cùng Hội Đồng (RH/GAD/AL)",
+      "Phê Duyệt (HOA/RH/GAD)",
+      "Onboarding Huấn Luyện",
+      "Cấp Mã Số GenApex"
+    ]
+  },
+  "trainingRoadmap": {
+    "conditions": [
+      "Mỗi tháng tối thiểu 1 HĐ và 20 triệu FYP",
+      "TOP 40 GenApex về doanh số tại mỗi hub cho mỗi đợt xét duyệt"
+    ],
+    "stages": [
+      {
+        "id": "M1-M3",
+        "title": "NỀN TẢNG",
+        "goal": "Trang bị tư duy, kiến thức và kỹ năng cốt lõi để TVV tự tin bước vào nghề.",
+        "details": {
+          "duration": "01 ngày (Sáng: Kiến thức / Chiều: Thực hành)",
+          "frequency": "Mỗi tuần",
+          "format": "Offline theo toàn Hub",
+          "trainer": "AD/AT chuyên trách"
+        },
+        "pobModules": [
+          "POB 1: Định hướng sự nghiệp TVTC",
+          "POB 2: Xây dựng và tiếp cận KH nguồn nóng",
+          "POB 3: Tạo TLMH và nộp HSYCBH trên Genova",
+          "POB 4: Tư vấn và trình bày giải pháp",
+          "POB 5: Xử lý từ chối và chốt hợp đồng",
+          "POB 6: Bàn giao hợp đồng và chăm sóc KH",
+          "POB 7: Ứng dụng công nghệ và trải nghiệm",
+          "POB 8: Thẩm định và phát hành hợp đồng BH"
+        ]
+      },
+      {
+        "id": "M4-M18",
+        "title": "NÂNG CAO",
+        "goal": "Nâng cao năng lực chuyển đổi, tối ưu hiệu suất & duy trì kết quả bền vững.",
+        "activities": "Tham dự các hoạt động huấn luyện theo chủ đề GenLion và Workshop nội bộ tại từng văn phòng địa phương."
+      }
+    ],
+    "saleActivities": [
+      { "activity": "Cập nhật hoạt động", "frequency": "Hàng ngày" },
+      { "activity": "Morning meeting", "frequency": "Hàng tuần" },
+      { "activity": "Coaching / JFW", "frequency": "2 tuần / lần" },
+      { "activity": "Họp với GAD/AL", "frequency": "Hàng tháng" },
+      { "activity": "Gen Apex Day", "frequency": "Tuần đầu mỗi tháng" }
+    ]
+  },
+  "incomePolicy": {
+    "stage1": {
+      "period": "M1-M3",
+      "totalPotential": "25 Triệu trong 3 tháng đầu",
+      "benefits": [
+        "Thưởng đào tạo lên đến 15 TRIỆU ĐỒNG (5tr/tháng)",
+        "Thưởng GenApex xuất sắc lên đến 10 TRIỆU ĐỒNG"
+      ],
+      "conditions": [
+        "Doanh số tối thiểu 60 TRIỆU FYP trong 3 tháng (20tr/tháng)",
+        "Hoàn thành tối thiểu 8 lớp POB"
+      ]
+    },
+    "stage2": {
+      "period": "M4-M18",
+      "totalPotential": "225 TRIỆU ĐỒNG trong 15 tháng",
+      "tiers": [
+        { "fyp": "20 - 35 triệu FYP", "bonus": "5 TRIỆU" },
+        { "fyp": "40 - 65 triệu FYP", "bonus": "10 TRIỆU" },
+        { "fyp": "50 - 95 triệu FYP", "bonus": "15 TRIỆU" }
+      ],
+      "maintenanceGoal": "Tổng doanh số FYP giai đoạn M4-M12 đạt 231 triệu VNĐ"
+    },
+    "rewards": [
+      "Áo Polo T-shirt & Quà Welcome",
+      "Bộ quà tặng & Pin tốt nghiệp",
+      "Máy tính bảng (Tablet) vào tháng M18"
+    ]
+  },
+  "companionBonus": {
+    "target": "Quản lý kinh doanh trực tiếp / Giám đốc Tổng Đại lý",
+    "condition": "Tại M19, nếu TVV thỏa mãn: Doanh số M4-M18 >= 855tr, >= 10 lượt hoạt động, K2 >= 75%",
+    "packages": [
+      { "name": "Gói A05", "value": "7.5 Triệu" },
+      { "name": "Gói A10", "value": "15 Triệu" },
+      { "name": "Gói A15", "value": "22.5 Triệu" }
+    ]
+  },
+  "eventInfo": {
+    "interviewSchedule": "09H00 - 11H00 Ngày 31/03/2026",
+    "location": "GEN PLAZA, 43-45 Tú Xương, P. Xuân Hòa, TP. HCM",
+    "totalSupport": "Lên đến 265 TRIỆU"
+  }
+}

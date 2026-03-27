@@ -1,0 +1,44 @@
+{
+  "applicants": [
+    {
+      "id": "001",
+      "fullName": "Nguyễn Văn A",
+      "email": "nguyenvana@email.com",
+      "phone": "0912345678",
+      "age": 28,
+      "experience": "2 năm kinh nghiệm bán hàng Bảo hiểm",
+      "source": "Facebook",
+      "status": "pending",
+      "appliedDate": "2026-03-27",
+      "interviewDate": "2026-03-31",
+      "notes": ""
+    },
+    {
+      "id": "002",
+      "fullName": "Trần Thị B",
+      "email": "tranthib@email.com",
+      "phone": "0987654321",
+      "age": 32,
+      "experience": "3 năm kinh nghiệm Tài chính Ngân hàng",
+      "source": "Website",
+      "status": "interviewed",
+      "appliedDate": "2026-03-25",
+      "interviewDate": "2026-03-31",
+      "notes": "Đã phỏng vấn, chờ phê duyệt"
+    },
+    {
+      "id": "003",
+      "fullName": "Lê Hoàng C",
+      "email": "lehoangc@email.com",
+      "phone": "0901122334",
+      "age": 45,
+      "experience": "5 năm kinh nghiệm Kinh doanh",
+      "source": "Giới thiệu",
+      "status": "approved",
+      "appliedDate": "2026-03-20",
+      "interviewDate": "2026-03-24",
+      "notes": "Đã phê duyệt, chờ onboarding"
+    }
+  ],
+  "lastUpdated": "2026-03-27T10:00:00Z"
+}
