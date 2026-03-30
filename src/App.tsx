@@ -102,7 +102,7 @@ onClick={() => handleTabChange(tab.id)}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 flex items-center gap-2 ${
                     activeTab === tab.id 
                       ? 'bg-red-50 text-red-600' 
-                      : 'text-gray-500 hover:bg-gray-50 hover:text-gray-900'
+                      : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                   }`}
                 >
                   <tab.icon size={16} />
@@ -226,7 +226,7 @@ onClick={() => handleTabChange(tab.id)}
                   <div className="flex items-start gap-3">
                     <Calendar className="text-red-600 shrink-0 mt-1" size={20} />
                     <div>
-                      <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Thời gian phỏng vấn</p>
+                      <p className="text-xs font-bold text-gray-600 uppercase tracking-wider mb-1">Thời gian phỏng vấn</p>
                       <p className="font-bold text-sm">{eventInfo.interviewSchedule}</p>
                     </div>
                   </div>
@@ -235,7 +235,7 @@ onClick={() => handleTabChange(tab.id)}
                   <div className="flex items-start gap-3">
                     <MapPin className="text-red-600 shrink-0 mt-1" size={20} />
                     <div>
-                      <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Địa điểm</p>
+                      <p className="text-xs font-bold text-gray-600 uppercase tracking-wider mb-1">Địa điểm</p>
                       <p className="font-bold text-sm">{eventInfo.location}</p>
                     </div>
                   </div>
@@ -244,7 +244,7 @@ onClick={() => handleTabChange(tab.id)}
                   <div className="flex items-start gap-3">
                     <Gift className="text-red-600 shrink-0 mt-1" size={20} />
                     <div>
-                      <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Quà tặng</p>
+                      <p className="text-xs font-bold text-gray-600 uppercase tracking-wider mb-1">Quà tặng</p>
                       <p className="font-bold text-sm">Set quà tốt nghiệp & Welcome Kit</p>
                     </div>
                   </div>
@@ -315,17 +315,17 @@ onClick={() => handleTabChange(tab.id)}
                     <div className="bg-gray-900 p-4 text-white">
                       <div className="flex justify-between items-center mb-2">
                         <span className="px-2 py-0.5 bg-red-600 rounded-full text-[10px] font-bold uppercase tracking-widest">{stage.id}</span>
-                        <BookOpen size={16} className="text-gray-400" />
+                        <BookOpen size={16} className="text-gray-600" />
                       </div>
                       <h3 className="text-xl font-bold mb-1">{stage.title}</h3>
-                      <p className="text-gray-400 text-xs leading-relaxed">{stage.goal}</p>
+                      <p className="text-gray-600 text-xs leading-relaxed">{stage.goal}</p>
                     </div>
                     <div className="p-4 space-y-4">
                       {stage.details && (
                         <div className="grid grid-cols-2 gap-3">
                           {Object.entries(stage.details).map(([key, val], i) => (
                             <div key={i}>
-                              <p className="text-[10px] uppercase font-bold text-gray-400 tracking-wider mb-0.5">{key}</p>
+                              <p className="text-[10px] uppercase font-bold text-gray-600 tracking-wider mb-0.5">{key}</p>
                               <p className="text-xs font-bold text-gray-700">{val}</p>
                             </div>
                           ))}
@@ -333,7 +333,7 @@ onClick={() => handleTabChange(tab.id)}
                       )}
                       {stage.pobModules && (
                         <div>
-                          <p className="text-[10px] uppercase font-bold text-gray-400 tracking-wider mb-2">Chương trình POB</p>
+                          <p className="text-[10px] uppercase font-bold text-gray-600 tracking-wider mb-2">Chương trình POB</p>
                           <div className="space-y-1">
                             {stage.pobModules.map((mod, i) => (
                               <div key={i} className="flex items-center gap-2 text-xs text-gray-600 bg-gray-50 p-2 rounded-lg">
@@ -360,7 +360,7 @@ onClick={() => handleTabChange(tab.id)}
               <div className="grid grid-cols-2 gap-3">
                 {trainingRoadmap.saleActivities.map((act, idx) => (
                   <Card key={idx} className="p-4 text-center hover:bg-red-600 hover:text-white transition-all group cursor-default">
-                    <p className="text-[10px] uppercase font-bold text-gray-400 group-hover:text-red-200 tracking-widest mb-1">{act.frequency}</p>
+                    <p className="text-[10px] uppercase font-bold text-gray-600 group-hover:text-red-200 tracking-widest mb-1">{act.frequency}</p>
                     <p className="font-bold text-sm leading-tight">{act.activity}</p>
                   </Card>
                 ))}
@@ -388,7 +388,7 @@ onClick={() => handleTabChange(tab.id)}
                     <h3 className="text-lg font-bold">Thưởng đào tạo</h3>
                   </div>
                   <div className="mb-4 lg:mb-8">
-                    <p className="text-xs text-gray-500 mb-1">Tổng quyền lợi tiềm năng</p>
+                    <p className="text-xs text-gray-600 mb-1">Tổng quyền lợi tiềm năng</p>
                     <p className="text-3xl lg:text-5xl font-black text-red-600 tracking-tight">{incomePolicy.stage1.totalPotential}</p>
                   </div>
                   <ul className="space-y-2 mb-4 lg:mb-8">
@@ -400,7 +400,7 @@ onClick={() => handleTabChange(tab.id)}
                     ))}
                   </ul>
                   <div className="pt-3 border-t border-gray-100">
-                    <p className="text-[10px] uppercase font-bold text-gray-400 tracking-wider mb-2">Điều kiện cần đạt</p>
+                    <p className="text-[10px] uppercase font-bold text-gray-600 tracking-wider mb-2">Điều kiện cần đạt</p>
                     <div className="space-y-1">
                       {incomePolicy.stage1.conditions.map((cond, i) => (
                         <div key={i} className="text-xs text-gray-600 flex items-center gap-2">
@@ -483,7 +483,7 @@ onClick={() => handleTabChange(tab.id)}
               <ArrowRight size={20} />
             </button>
           </div>
-          <p className="mt-12 text-gray-400 text-sm font-medium uppercase tracking-widest">
+          <p className="mt-12 text-gray-600 text-sm font-medium uppercase tracking-widest">
             © 2026 Generali Việt Nam - Sống Như Ý
           </p>
         </div>
@@ -499,7 +499,7 @@ onClick={() => handleTabChange(tab.id)}
               className={`flex flex-col items-center justify-center gap-1 px-2 py-1 transition-all ${
                 activeTab === tab.id 
                   ? 'text-red-600' 
-                  : 'text-gray-400'
+                  : 'text-gray-600'
               }`}
             >
               <tab.icon size={20} />
@@ -511,7 +511,7 @@ onClick={() => handleTabChange(tab.id)}
             className={`flex flex-col items-center justify-center gap-1 px-2 py-1 transition-all ${
               activeTab === 'register' 
                 ? 'text-red-600' 
-                : 'text-gray-400'
+                : 'text-gray-600'
             }`}
           >
             <FileText size={20} />
