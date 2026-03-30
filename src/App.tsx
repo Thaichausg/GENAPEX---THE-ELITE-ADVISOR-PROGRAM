@@ -420,7 +420,7 @@ onClick={() => handleTabChange(tab.id)}
                   <h3 className="text-xl font-extrabold text-white">Thưởng duy trì</h3>
                 </div>
                 <div className="mb-6 lg:mb-10">
-                  <p className="text-sm font-medium text-white/80 mb-2">Tổng 15 tháng lên đến</p>
+                  <p className="text-sm font-medium text-gray-300 mb-2">Tổng 15 tháng lên đến</p>
                   <p className="text-3xl lg:text-5xl font-black text-white tracking-tight">{incomePolicy.stage2.totalPotential}</p>
                 </div>
                 <div className="space-y-2 mb-6 lg:mb-10">
