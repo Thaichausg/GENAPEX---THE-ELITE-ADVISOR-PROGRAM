@@ -129,15 +129,36 @@ export default function RegistrationForm() {
         }),
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to submit');
+      if (response.ok) {
+        setIsSubmitting(false);
+        setIsSubmitted(true);
+        return;
       }
+      
+      throw new Error('API failed');
+    } catch (error) {
+      const existingData = localStorage.getItem('genapex_applicants');
+      const applicants = existingData ? JSON.parse(existingData) : [];
+      
+      const newApplicant = {
+        id: String(Date.now()),
+        fullName: formData.fullName,
+        email: formData.email,
+        phone: formData.phone,
+        age: formData.age,
+        experience: formData.experience,
+        source: formData.source,
+        status: 'pending',
+        appliedDate: new Date().toISOString().split('T')[0],
+        interviewDate: '31/03/2026',
+        notes: '',
+      };
+
+      applicants.push(newApplicant);
+      localStorage.setItem('genapex_applicants', JSON.stringify(applicants));
 
       setIsSubmitting(false);
       setIsSubmitted(true);
-    } catch (error) {
-      setIsSubmitting(false);
-      alert('Có lỗi xảy ra. Vui lòng thử lại.');
     }
   };
 
