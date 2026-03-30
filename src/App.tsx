@@ -50,7 +50,7 @@ export default function App() {
 
   const handleTabChange = (tab: string) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    handleTabChange(tab as any);
+    setActiveTab(tab as any);
   };
 
   const tabs = [
