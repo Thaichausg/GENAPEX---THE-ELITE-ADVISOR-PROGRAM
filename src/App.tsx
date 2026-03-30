@@ -48,6 +48,11 @@ export default function App() {
 
   const { programInfo, recruitment, trainingRoadmap, incomePolicy, eventInfo } = genapexData;
 
+  const handleTabChange = (tab: string) => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    handleTabChange(tab as any);
+  };
+
   const tabs = [
     { id: 'overview', label: 'Tổng quan', icon: Home },
     { id: 'recruitment', label: 'Tuyển dụng', icon: Users },
@@ -93,7 +98,7 @@ export default function App() {
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
-                  onClick={() => setActiveTab(tab.id as any)}
+onClick={() => handleTabChange(tab.id)}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 flex items-center gap-2 ${
                     activeTab === tab.id 
                       ? 'bg-red-50 text-red-600' 
@@ -106,7 +111,7 @@ export default function App() {
               ))}
             </nav>
             <button 
-              onClick={() => setActiveTab('register')}
+              onClick={() => handleTabChange('register')}
               className="bg-red-600 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-red-700 transition-colors shadow-md shadow-red-100">
               Đăng ký ngay
             </button>
@@ -143,7 +148,7 @@ export default function App() {
                   <button
                     key={tab.id}
                     onClick={() => {
-                      setActiveTab(tab.id as any);
+                      handleTabChange(tab.id as any);
                       setMobileMenuOpen(false);
                     }}
                     className={`w-full px-4 py-3 rounded-xl text-left font-medium flex items-center gap-3 transition-all ${
@@ -472,7 +477,7 @@ export default function App() {
           </p>
           <div className="flex items-center justify-center gap-4">
             <button 
-              onClick={() => setActiveTab('register')}
+              onClick={() => handleTabChange('register')}
               className="bg-red-600 text-white px-10 py-4 rounded-full font-black text-lg hover:bg-red-700 transition-all shadow-xl shadow-red-100 flex items-center gap-3">
               Gia nhập ngay
               <ArrowRight size={20} />
@@ -490,7 +495,7 @@ export default function App() {
           {tabs.slice(0, 4).map((tab) => (
             <button
               key={tab.id}
-              onClick={() => setActiveTab(tab.id as any)}
+              onClick={() => handleTabChange(tab.id as any)}
               className={`flex flex-col items-center justify-center gap-1 px-2 py-1 transition-all ${
                 activeTab === tab.id 
                   ? 'text-red-600' 
@@ -502,7 +507,7 @@ export default function App() {
             </button>
           ))}
           <button
-            onClick={() => setActiveTab('register')}
+            onClick={() => handleTabChange('register')}
             className={`flex flex-col items-center justify-center gap-1 px-2 py-1 transition-all ${
               activeTab === 'register' 
                 ? 'text-red-600' 
