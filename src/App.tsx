@@ -378,32 +378,32 @@ onClick={() => handleTabChange(tab.id)}
               className="space-y-6"
             >
               {/* Stage 1 */}
-              <Card className="relative overflow-hidden bg-gradient-to-br from-red-50 to-orange-50 border-red-200">
+              <Card className="relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-4 lg:p-8 opacity-10">
                   <TrendingUp size={60} className="lg:w-24 lg:h-24" />
                 </div>
                 <div className="p-4 lg:p-8">
                   <div className="flex items-center gap-2 mb-4 lg:mb-6">
                     <span className="px-2 py-1 bg-red-600 text-white rounded-full text-[10px] font-bold uppercase">{incomePolicy.stage1.period}</span>
-                    <h3 className="text-xl lg:text-2xl font-bold text-gray-900">Thưởng đào tạo</h3>
+                    <h3 className="text-lg font-bold">Thưởng đào tạo</h3>
                   </div>
                   <div className="mb-4 lg:mb-8">
-                    <p className="text-xs font-semibold text-white/80 mb-1">Tổng quyền lợi tiềm năng</p>
+                    <p className="text-xs text-gray-500 mb-1">Tổng quyền lợi tiềm năng</p>
                     <p className="text-2xl lg:text-4xl font-black text-red-600 tracking-tight">{incomePolicy.stage1.totalPotential}</p>
                   </div>
                   <ul className="space-y-2 mb-4 lg:mb-8">
                     {incomePolicy.stage1.benefits.map((benefit, i) => (
-                      <li key={i} className="flex items-start gap-2 text-xs font-bold text-white">
+                      <li key={i} className="flex items-start gap-2 text-xs font-bold text-gray-700">
                         <CheckCircle2 size={14} className="text-red-600 shrink-0 mt-0.5" />
                         {benefit}
                       </li>
                     ))}
                   </ul>
                   <div className="pt-3 border-t border-gray-100">
-                    <p className="text-[10px] uppercase font-bold text-white/70 tracking-wider mb-2">Điều kiện cần đạt</p>
+                    <p className="text-[10px] uppercase font-bold text-gray-400 tracking-wider mb-2">Điều kiện cần đạt</p>
                     <div className="space-y-1">
                       {incomePolicy.stage1.conditions.map((cond, i) => (
-                        <div key={i} className="text-xs font-medium text-white flex items-center gap-2">
+                        <div key={i} className="text-xs text-gray-600 flex items-center gap-2">
                           <div className="w-1 h-1 bg-red-600 rounded-full shrink-0" />
                           {cond}
                         </div>
@@ -417,24 +417,24 @@ onClick={() => handleTabChange(tab.id)}
               <Card className="bg-gray-900 text-white p-4 lg:p-8">
                 <div className="flex items-center gap-2 mb-4 lg:mb-6">
                   <span className="px-2 py-1 bg-white text-gray-900 rounded-full text-[10px] font-bold uppercase">{incomePolicy.stage2.period}</span>
-                  <h3 className="text-xl lg:text-2xl font-bold text-white">Thưởng duy trì</h3>
+                  <h3 className="text-lg font-bold">Thưởng duy trì</h3>
                 </div>
                 <div className="mb-6 lg:mb-10">
-                  <p className="text-xs font-semibold text-white/70 mb-1">Tổng 15 tháng lên đến</p>
+                  <p className="text-xs text-gray-400 mb-1">Tổng 15 tháng lên đến</p>
                   <p className="text-2xl lg:text-4xl font-black text-white tracking-tight">{incomePolicy.stage2.totalPotential}</p>
                 </div>
                 <div className="space-y-2 mb-6 lg:mb-10">
                   {incomePolicy.stage2.tiers.map((tier, i) => (
-                    <div key={i} className="flex justify-between items-center p-4 bg-white/10 rounded-xl border border-white/20">
-                      <span className="text-sm font-semibold text-white">{tier.fyp}</span>
-                      <span className="font-black text-green-400 text-lg">{tier.bonus}</span>
+                    <div key={i} className="flex justify-between items-center p-3 bg-white/5 rounded-xl border border-white/10">
+                      <span className="text-xs font-medium text-gray-300">{tier.fyp}</span>
+                      <span className="font-black text-red-500 text-sm">{tier.bonus}</span>
                     </div>
                   ))}
                 </div>
                 <div className="p-3 bg-red-600/20 border border-red-600/30 rounded-xl">
                   <div className="flex items-center gap-2">
                     <Award className="text-red-500 shrink-0" size={16} />
-                    <p className="text-sm font-bold leading-relaxed text-white">{incomePolicy.stage2.maintenanceGoal}</p>
+                    <p className="text-[10px] font-bold leading-relaxed">{incomePolicy.stage2.maintenanceGoal}</p>
                   </div>
                 </div>
               </Card>
