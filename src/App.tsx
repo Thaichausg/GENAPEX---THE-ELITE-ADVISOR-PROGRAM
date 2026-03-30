@@ -378,7 +378,7 @@ onClick={() => handleTabChange(tab.id)}
               className="space-y-6"
             >
               {/* Stage 1 */}
-              <Card className="relative overflow-hidden">
+              <Card className="relative overflow-hidden shadow-lg border border-gray-200">
                 <div className="absolute top-0 right-0 p-4 lg:p-8 opacity-10">
                   <TrendingUp size={60} className="lg:w-24 lg:h-24" />
                 </div>
@@ -389,7 +389,7 @@ onClick={() => handleTabChange(tab.id)}
                   </div>
                   <div className="mb-4 lg:mb-8">
                     <p className="text-xs text-gray-500 mb-1">Tổng quyền lợi tiềm năng</p>
-                    <p className="text-2xl lg:text-4xl font-black text-red-600 tracking-tight">{incomePolicy.stage1.totalPotential}</p>
+                    <p className="text-3xl lg:text-5xl font-black text-red-600 tracking-tight">{incomePolicy.stage1.totalPotential}</p>
                   </div>
                   <ul className="space-y-2 mb-4 lg:mb-8">
                     {incomePolicy.stage1.benefits.map((benefit, i) => (
@@ -421,20 +421,20 @@ onClick={() => handleTabChange(tab.id)}
                 </div>
                 <div className="mb-6 lg:mb-10">
                   <p className="text-sm font-medium text-white/80 mb-2">Tổng 15 tháng lên đến</p>
-                  <p className="text-3xl lg:text-5xl font-black text-green-400 tracking-tight">{incomePolicy.stage2.totalPotential}</p>
+                  <p className="text-3xl lg:text-5xl font-black text-white tracking-tight">{incomePolicy.stage2.totalPotential}</p>
                 </div>
                 <div className="space-y-2 mb-6 lg:mb-10">
                   {incomePolicy.stage2.tiers.map((tier, i) => (
                     <div key={i} className="flex justify-between items-center p-4 bg-gray-800 rounded-xl border border-gray-700 shadow-lg">
                       <span className="text-base font-bold text-white">{tier.fyp}</span>
-                      <span className="font-extrabold text-green-400 text-xl">{tier.bonus}</span>
+                      <span className="font-extrabold text-yellow-400 text-xl">{tier.bonus}</span>
                     </div>
                   ))}
                 </div>
-                <div className="p-4 bg-gradient-to-r from-yellow-500/30 to-orange-500/30 border border-yellow-500/50 rounded-xl">
+                <div className="p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded-r-xl">
                   <div className="flex items-center gap-2">
-                    <Award className="text-red-500 shrink-0" size={16} />
-                    <p className="text-base font-bold text-yellow-300 leading-relaxed">{incomePolicy.stage2.maintenanceGoal}</p>
+                    <Award className="text-yellow-600 shrink-0" size={20} />
+                    <p className="text-base font-semibold text-yellow-400 leading-relaxed">{incomePolicy.stage2.maintenanceGoal}</p>
                   </div>
                 </div>
               </Card>
