@@ -27,7 +27,7 @@ import PDFViewer from './components/PDFViewer';
 const SectionHeader = ({ title, icon: Icon, subtitle }: { title: string, icon: any, subtitle?: string }) => (
   <div className="mb-6">
     <div className="flex items-center gap-3 mb-2">
-      <div className="p-2 bg-red-600 rounded-lg text-white">
+      <div className="p-2 bg-[#D92B2B] rounded-lg text-white">
         <Icon size={20} />
       </div>
       <h2 className="text-xl font-bold text-gray-900 uppercase tracking-tight">{title}</h2>
@@ -67,12 +67,12 @@ export default function App() {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50 lg:hidden">
         <div className="flex justify-between items-center px-4 py-3">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-red-600 flex items-center justify-center rounded-lg shadow-lg shadow-red-200">
+            <div className="w-10 h-10 bg-[#D92B2B] flex items-center justify-center rounded-lg shadow-lg shadow-red-200">
               <span className="text-white font-black text-lg">G</span>
             </div>
             <div>
               <h1 className="text-lg font-bold tracking-tighter text-gray-900">GENAPEX</h1>
-              <p className="text-[10px] font-medium text-red-600 uppercase tracking-widest">Elite Advisor</p>
+              <p className="text-[10px] font-medium text-[#D92B2B] uppercase tracking-widest">Elite Advisor</p>
             </div>
           </div>
           <button onClick={() => setMobileMenuOpen(true)} className="p-2">
@@ -86,12 +86,12 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-red-600 flex items-center justify-center rounded-xl shadow-lg shadow-red-200">
+              <div className="w-12 h-12 bg-[#D92B2B] flex items-center justify-center rounded-xl shadow-lg shadow-red-200">
                 <span className="text-white font-black text-xl">G</span>
               </div>
               <div>
                 <h1 className="text-xl font-bold tracking-tighter text-gray-900 leading-none">GENAPEX</h1>
-                <p className="text-xs font-medium text-red-600 uppercase tracking-widest mt-1">Elite Advisor Program</p>
+                <p className="text-xs font-medium text-[#D92B2B] uppercase tracking-widest mt-1">Elite Advisor Program</p>
               </div>
             </div>
             <nav className="flex items-center gap-1">
@@ -101,7 +101,7 @@ export default function App() {
 onClick={() => handleTabChange(tab.id)}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 flex items-center gap-2 ${
                     activeTab === tab.id 
-                      ? 'bg-red-50 text-red-600' 
+                      ? 'bg-red-50 text-[#D92B2B]' 
                       : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
                   }`}
                 >
@@ -112,7 +112,7 @@ onClick={() => handleTabChange(tab.id)}
             </nav>
             <button 
               onClick={() => handleTabChange('register')}
-              className="bg-red-600 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-red-700 transition-colors shadow-md shadow-red-100">
+              className="bg-[#D92B2B] text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-[#B82424] transition-colors shadow-md shadow-red-100">
               Đăng ký ngay
             </button>
           </div>
@@ -153,7 +153,7 @@ onClick={() => handleTabChange(tab.id)}
                     }}
                     className={`w-full px-4 py-3 rounded-xl text-left font-medium flex items-center gap-3 transition-all ${
                       activeTab === tab.id 
-                        ? 'bg-red-50 text-red-600' 
+                        ? 'bg-red-50 text-[#D92B2B]' 
                         : 'text-gray-700 hover:bg-gray-50'
                     }`}
                   >
@@ -180,7 +180,7 @@ onClick={() => handleTabChange(tab.id)}
               className="space-y-6"
             >
               {/* Hero Section - Mobile Optimized */}
-              <div className="relative rounded-2xl lg:rounded-3xl overflow-hidden bg-red-600 text-white p-6 lg:p-16">
+              <div className="relative rounded-2xl lg:rounded-3xl overflow-hidden bg-[#D92B2B] text-white p-6 lg:p-16">
                 <div className="relative z-10">
                   <motion.span 
                     initial={{ opacity: 0 }}
@@ -224,7 +224,7 @@ onClick={() => handleTabChange(tab.id)}
               <div className="grid grid-cols-1 gap-4">
                 <Card className="p-4 border-l-4 border-l-red-600">
                   <div className="flex items-start gap-3">
-                    <Calendar className="text-red-600 shrink-0 mt-1" size={20} />
+                    <Calendar className="text-[#D92B2B] shrink-0 mt-1" size={20} />
                     <div>
                       <p className="text-xs font-bold text-gray-600 uppercase tracking-wider mb-1">Thời gian phỏng vấn</p>
                       <p className="font-bold text-sm">{eventInfo.interviewSchedule}</p>
@@ -233,7 +233,7 @@ onClick={() => handleTabChange(tab.id)}
                 </Card>
                 <Card className="p-4 border-l-4 border-l-red-600">
                   <div className="flex items-start gap-3">
-                    <MapPin className="text-red-600 shrink-0 mt-1" size={20} />
+                    <MapPin className="text-[#D92B2B] shrink-0 mt-1" size={20} />
                     <div>
                       <p className="text-xs font-bold text-gray-600 uppercase tracking-wider mb-1">Địa điểm</p>
                       <p className="font-bold text-sm">{eventInfo.location}</p>
@@ -242,7 +242,7 @@ onClick={() => handleTabChange(tab.id)}
                 </Card>
                 <Card className="p-4 border-l-4 border-l-red-600">
                   <div className="flex items-start gap-3">
-                    <Gift className="text-red-600 shrink-0 mt-1" size={20} />
+                    <Gift className="text-[#D92B2B] shrink-0 mt-1" size={20} />
                     <div>
                       <p className="text-xs font-bold text-gray-600 uppercase tracking-wider mb-1">Quà tặng</p>
                       <p className="font-bold text-sm">Set quà tốt nghiệp & Welcome Kit</p>
@@ -272,7 +272,7 @@ onClick={() => handleTabChange(tab.id)}
                 {recruitment.requirements.map((req, idx) => (
                   <Card key={idx} className="p-4">
                     <div className="flex gap-3">
-                      <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center text-red-600 shrink-0">
+                      <div className="w-8 h-8 rounded-full bg-red-50 flex items-center justify-center text-[#D92B2B] shrink-0">
                         <CheckCircle2 size={16} />
                       </div>
                       <div>
@@ -289,7 +289,7 @@ onClick={() => handleTabChange(tab.id)}
                 {recruitment.process.map((step, idx) => (
                   <div key={idx} className="relative">
                     <div className="absolute -left-[21px] top-0 w-6 h-6 rounded-full bg-white border-2 border-red-600 flex items-center justify-center z-10">
-                      <span className="text-red-600 font-bold text-[10px]">{idx + 1}</span>
+                      <span className="text-[#D92B2B] font-bold text-[10px]">{idx + 1}</span>
                     </div>
                     <Card className="p-3">
                       <p className="font-bold text-sm text-gray-900">{step}</p>
@@ -314,7 +314,7 @@ onClick={() => handleTabChange(tab.id)}
                   <Card key={idx} className="flex flex-col overflow-hidden">
                     <div className="bg-gray-900 p-4 text-white">
                       <div className="flex justify-between items-center mb-2">
-                        <span className="px-2 py-0.5 bg-red-600 rounded-full text-[10px] font-bold uppercase tracking-widest">{stage.id}</span>
+                        <span className="px-2 py-0.5 bg-[#D92B2B] rounded-full text-[10px] font-bold uppercase tracking-widest">{stage.id}</span>
                         <BookOpen size={16} className="text-gray-600" />
                       </div>
                       <h3 className="text-xl font-bold mb-1">{stage.title}</h3>
@@ -337,7 +337,7 @@ onClick={() => handleTabChange(tab.id)}
                           <div className="space-y-1">
                             {stage.pobModules.map((mod, i) => (
                               <div key={i} className="flex items-center gap-2 text-xs text-gray-600 bg-gray-50 p-2 rounded-lg">
-                                <ChevronRight size={12} className="text-red-600 shrink-0" />
+                                <ChevronRight size={12} className="text-[#D92B2B] shrink-0" />
                                 <span className="line-clamp-1">{mod}</span>
                               </div>
                             ))}
@@ -359,7 +359,7 @@ onClick={() => handleTabChange(tab.id)}
               <SectionHeader title="Hoạt động kinh doanh" icon={Briefcase} subtitle="Duy trì nhịp độ làm việc chuyên nghiệp." />
               <div className="grid grid-cols-2 gap-3">
                 {trainingRoadmap.saleActivities.map((act, idx) => (
-                  <Card key={idx} className="p-4 text-center hover:bg-red-600 hover:text-white transition-all group cursor-default">
+                  <Card key={idx} className="p-4 text-center hover:bg-[#D92B2B] hover:text-white transition-all group cursor-default">
                     <p className="text-[10px] uppercase font-bold text-gray-600 group-hover:text-red-200 tracking-widest mb-1">{act.frequency}</p>
                     <p className="font-bold text-sm leading-tight">{act.activity}</p>
                   </Card>
@@ -384,17 +384,17 @@ onClick={() => handleTabChange(tab.id)}
                 </div>
                 <div className="p-4 lg:p-8">
                   <div className="flex items-center gap-2 mb-4 lg:mb-6">
-                    <span className="px-2 py-1 bg-red-600 text-white rounded-full text-[10px] font-bold uppercase">{incomePolicy.stage1.period}</span>
+                    <span className="px-2 py-1 bg-[#D92B2B] text-white rounded-full text-[10px] font-bold uppercase">{incomePolicy.stage1.period}</span>
                     <h3 className="text-lg font-bold">Thưởng đào tạo</h3>
                   </div>
                   <div className="mb-4 lg:mb-8">
                     <p className="text-xs text-gray-600 mb-1">Tổng quyền lợi tiềm năng</p>
-                    <p className="text-3xl lg:text-5xl font-black text-red-600 tracking-tight">{incomePolicy.stage1.totalPotential}</p>
+                    <p className="text-3xl lg:text-5xl font-black text-[#D92B2B] tracking-tight">{incomePolicy.stage1.totalPotential}</p>
                   </div>
                   <ul className="space-y-2 mb-4 lg:mb-8">
                     {incomePolicy.stage1.benefits.map((benefit, i) => (
                       <li key={i} className="flex items-start gap-2 text-xs font-bold text-gray-700">
-                        <CheckCircle2 size={14} className="text-red-600 shrink-0 mt-0.5" />
+                        <CheckCircle2 size={14} className="text-[#D92B2B] shrink-0 mt-0.5" />
                         {benefit}
                       </li>
                     ))}
@@ -404,7 +404,7 @@ onClick={() => handleTabChange(tab.id)}
                     <div className="space-y-1">
                       {incomePolicy.stage1.conditions.map((cond, i) => (
                         <div key={i} className="text-xs text-gray-600 flex items-center gap-2">
-                          <div className="w-1 h-1 bg-red-600 rounded-full shrink-0" />
+                          <div className="w-1 h-1 bg-[#D92B2B] rounded-full shrink-0" />
                           {cond}
                         </div>
                       ))}
@@ -427,14 +427,14 @@ onClick={() => handleTabChange(tab.id)}
                   {incomePolicy.stage2.tiers.map((tier, i) => (
                     <div key={i} className="flex justify-between items-center p-4 bg-gray-800 rounded-xl border border-gray-700 shadow-lg">
                       <span className="text-base font-bold text-white">{tier.fyp}</span>
-                      <span className="font-extrabold text-yellow-400 text-xl">{tier.bonus}</span>
+                      <span className="font-extrabold text-[#C6A355] text-xl">{tier.bonus}</span>
                     </div>
                   ))}
                 </div>
-                <div className="p-4 bg-yellow-50 border-l-4 border-yellow-500 rounded-r-xl">
+                <div className="p-4 bg-[#C6A355]/10 border-l-4 border-yellow-600 rounded-r-xl">
                   <div className="flex items-center gap-2">
                     <Award className="text-yellow-600 shrink-0" size={20} />
-                    <p className="text-base font-semibold text-yellow-400 leading-relaxed">{incomePolicy.stage2.maintenanceGoal}</p>
+                    <p className="text-base font-semibold text-[#C6A355] leading-relaxed">{incomePolicy.stage2.maintenanceGoal}</p>
                   </div>
                 </div>
               </Card>
@@ -444,7 +444,7 @@ onClick={() => handleTabChange(tab.id)}
               <div className="grid grid-cols-1 gap-4">
                 {incomePolicy.rewards.map((reward, idx) => (
                   <Card key={idx} className="p-4 flex flex-col">
-                    <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-red-600 shrink-0">
+                    <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-[#D92B2B] shrink-0">
                       {idx === 0 ? <Briefcase size={24} /> : idx === 1 ? <Award size={24} /> : <TrendingUp size={24} />}
                     </div>
                     <p className="font-bold text-gray-800">{reward}</p>
@@ -478,7 +478,7 @@ onClick={() => handleTabChange(tab.id)}
           <div className="flex items-center justify-center gap-4">
             <button 
               onClick={() => handleTabChange('register')}
-              className="bg-red-600 text-white px-10 py-4 rounded-full font-black text-lg hover:bg-red-700 transition-all shadow-xl shadow-red-100 flex items-center gap-3">
+              className="bg-[#D92B2B] text-white px-10 py-4 rounded-full font-black text-lg hover:bg-[#B82424] transition-all shadow-xl shadow-red-100 flex items-center gap-3">
               Gia nhập ngay
               <ArrowRight size={20} />
             </button>
@@ -498,7 +498,7 @@ onClick={() => handleTabChange(tab.id)}
               onClick={() => handleTabChange(tab.id as any)}
               className={`flex flex-col items-center justify-center gap-1 px-2 py-1 transition-all ${
                 activeTab === tab.id 
-                  ? 'text-red-600' 
+                  ? 'text-[#D92B2B]' 
                   : 'text-gray-600'
               }`}
             >
@@ -510,7 +510,7 @@ onClick={() => handleTabChange(tab.id)}
             onClick={() => handleTabChange('register')}
             className={`flex flex-col items-center justify-center gap-1 px-2 py-1 transition-all ${
               activeTab === 'register' 
-                ? 'text-red-600' 
+                ? 'text-[#D92B2B]' 
                 : 'text-gray-600'
             }`}
           >

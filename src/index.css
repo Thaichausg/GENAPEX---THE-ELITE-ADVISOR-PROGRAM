@@ -3,8 +3,38 @@
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Generali Brand Colors */
+  --color-generali-red: #D92B2B;
+  --color-generali-dark: #1A1A1A;
+  --color-generali-gold: #C6A355;
 }
 
 body {
   @apply font-sans antialiased;
+}
+
+/* Generali Theme Override */
+.bg-generali-red {
+  background-color: #D92B2B;
+}
+
+.text-generali-red {
+  color: #D92B2B;
+}
+
+.bg-generali-dark {
+  background-color: #1A1A1A;
+}
+
+.bg-generali-gold {
+  background-color: #C6A355;
+}
+
+.text-generali-gold {
+  color: #C6A355;
+}
+
+.border-generali-gold {
+  border-color: #C6A355;
 }
