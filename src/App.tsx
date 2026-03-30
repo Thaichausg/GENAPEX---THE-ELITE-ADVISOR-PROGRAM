@@ -447,7 +447,7 @@ onClick={() => handleTabChange(tab.id)}
                     <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-red-600 shrink-0">
                       {idx === 0 ? <Briefcase size={24} /> : idx === 1 ? <Award size={24} /> : <TrendingUp size={24} />}
                     </div>
-                    <p className="font-bold text-gray-900">{reward}</p>
+                    <p className="font-bold text-gray-800">{reward}</p>
                   </Card>
                 ))}
               </div>
