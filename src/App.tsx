@@ -417,24 +417,24 @@ onClick={() => handleTabChange(tab.id)}
               <Card className="bg-gray-900 text-white p-4 lg:p-8">
                 <div className="flex items-center gap-2 mb-4 lg:mb-6">
                   <span className="px-2 py-1 bg-white text-gray-900 rounded-full text-[10px] font-bold uppercase">{incomePolicy.stage2.period}</span>
-                  <h3 className="text-lg font-bold">Thưởng duy trì</h3>
+                  <h3 className="text-xl font-extrabold text-white">Thưởng duy trì</h3>
                 </div>
                 <div className="mb-6 lg:mb-10">
-                  <p className="text-xs text-gray-400 mb-1">Tổng 15 tháng lên đến</p>
-                  <p className="text-2xl lg:text-4xl font-black text-white tracking-tight">{incomePolicy.stage2.totalPotential}</p>
+                  <p className="text-sm font-medium text-white/80 mb-2">Tổng 15 tháng lên đến</p>
+                  <p className="text-3xl lg:text-5xl font-black text-green-400 tracking-tight">{incomePolicy.stage2.totalPotential}</p>
                 </div>
                 <div className="space-y-2 mb-6 lg:mb-10">
                   {incomePolicy.stage2.tiers.map((tier, i) => (
-                    <div key={i} className="flex justify-between items-center p-3 bg-white/5 rounded-xl border border-white/10">
-                      <span className="text-xs font-medium text-gray-300">{tier.fyp}</span>
-                      <span className="font-black text-red-500 text-sm">{tier.bonus}</span>
+                    <div key={i} className="flex justify-between items-center p-4 bg-gray-800 rounded-xl border border-gray-700 shadow-lg">
+                      <span className="text-base font-bold text-white">{tier.fyp}</span>
+                      <span className="font-extrabold text-green-400 text-xl">{tier.bonus}</span>
                     </div>
                   ))}
                 </div>
-                <div className="p-3 bg-red-600/20 border border-red-600/30 rounded-xl">
+                <div className="p-4 bg-gradient-to-r from-yellow-500/30 to-orange-500/30 border border-yellow-500/50 rounded-xl">
                   <div className="flex items-center gap-2">
                     <Award className="text-red-500 shrink-0" size={16} />
-                    <p className="text-[10px] font-bold leading-relaxed">{incomePolicy.stage2.maintenanceGoal}</p>
+                    <p className="text-base font-bold text-yellow-300 leading-relaxed">{incomePolicy.stage2.maintenanceGoal}</p>
                   </div>
                 </div>
               </Card>
