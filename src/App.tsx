@@ -438,7 +438,7 @@ export default function App() {
               <SectionHeader title="Quà tặng & Công nhận" icon={Gift} subtitle="Phần thưởng xứng đáng cho nỗ lực bền bỉ." />
               <div className="grid grid-cols-1 gap-4">
                 {incomePolicy.rewards.map((reward, idx) => (
-                  <Card key={idx} className="p-4 flex items-center gap-4">
+                  <Card key={idx} className="p-4 flex flex-col">
                     <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-red-600 shrink-0">
                       {idx === 0 ? <Briefcase size={24} /> : idx === 1 ? <Award size={24} /> : <TrendingUp size={24} />}
                     </div>
